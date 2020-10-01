@@ -1,6 +1,6 @@
 name: Build Tests
 on: [pull_request]
-jobs:
+jobs:any
   jest:
     name: "Jest Unit Tests"
     runs-on: ubuntu-latest
@@ -54,3 +54,4 @@ jobs:
       - name: Running htmlproofer
         run: |
           bundle exec htmlproofer ./_site --assume-extension --check-html --disable-external --url-ignore "/#.*/"
+
